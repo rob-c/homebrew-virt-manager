@@ -66,7 +66,7 @@ class VirtManager < Formula
     system "#{libexec}/bin/python", "setup.py",
                      "configure",
                      "--prefix=#{libexec}"
-    ENV.prepend_path 'PATH' '#{Formula["gtk+3"].opt_bin}'
+    ENV.prepend_path 'PATH', '#{Formula["gtk+3"].opt_bin}'
     system "#{libexec}/bin/python", "setup.py",
                      "install"
 
