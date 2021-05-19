@@ -10,6 +10,7 @@ class VirtManager < Formula
   depends_on "intltool" => :build
   depends_on "pkg-config" => :build
 
+  depends_on "adwaita-icon-theme"
   depends_on "docutils"
   depends_on "gettext"
   depends_on "gtk+3"
