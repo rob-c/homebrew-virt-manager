@@ -66,7 +66,7 @@ class VirtManager < Formula
     system "#{libexec}/bin/python", "setup.py",
                      "configure",
                      "--prefix=#{libexec}"
-    system "PATH=$PATH:#{Formula["gtk+3"].opt_bin} #{libexec}/bin/python", "setup.py",
+    system "export PATH=$PATH:#{Formula["gtk+3"].opt_bin}; #{libexec}/bin/python", "setup.py",
                      "install"
 
     # install virt-manager commands with PATH set to Python virtualenv environment
