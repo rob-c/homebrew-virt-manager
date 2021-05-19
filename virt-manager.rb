@@ -5,7 +5,8 @@ class VirtManager < Formula
   homepage "https://virt-manager.org/"
   url "https://releases.pagure.org/virt-manager/virt-manager-3.2.0.tar.gz"
   sha256 "2b6fe3d90d89e1130227e4b05c51e6642d89c839d3ea063e0e29475fd9bf7b86"
-  revision 1
+  head "https://github.com/virt-manager/virt-manager.git", :using => :git
+  revision 2
 
   depends_on "intltool" => :build
   depends_on "pkg-config" => :build
