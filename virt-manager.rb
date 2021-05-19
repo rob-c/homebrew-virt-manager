@@ -68,9 +68,6 @@ class VirtManager < Formula
                      "configure",
                      "--prefix=#{libexec}"
     system "#{libexec}/bin/python", "setup.py",
-                     "--no-user-cfg",
-                     "--no-update-icon-cache",
-                     "--no-compile-schemas",
                      "install"
 
     # install virt-manager commands with PATH set to Python virtualenv environment
