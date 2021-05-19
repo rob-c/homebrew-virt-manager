@@ -66,9 +66,8 @@ class VirtManager < Formula
     system "#{libexec}/bin/python", "setup.py",
                      "configure",
                      "--prefix=#{libexec}"
-    ENV.prepend_path 'PATH', '#{Formula["gtk+3"].opt_bin}'
-    system "#{libexec}/bin/python", "setup.py",
-                     "install"
+    system "#{libexec}/bin/python", "setup.py", "--no-update-icon-cache",
+                     "--no-compile-schemas", "install"
 
     # install virt-manager commands with PATH set to Python virtualenv environment
     bin.install Dir[libexec/"bin/virt-*"]
