@@ -12,6 +12,7 @@ class VirtManager < Formula
 
   depends_on "adwaita-icon-theme"
   depends_on "shared-mime-info"
+  depends_on "dbus"
   depends_on "docutils"
   depends_on "gettext"
   depends_on "gtk+3"
