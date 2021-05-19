@@ -10,13 +10,12 @@ class VirtManager < Formula
 
   depends_on "intltool" => :build
   depends_on "pkg-config" => :build
+  depends_on "gtk+3" => :build
 
   depends_on "adwaita-icon-theme"
   depends_on "shared-mime-info"
-  depends_on "gtk+3"
   depends_on "docutils"
   depends_on "gettext"
-  depends_on "gtk+3"
   depends_on "gtk-vnc"
   depends_on "gtksourceview4"
   depends_on "libosinfo"
