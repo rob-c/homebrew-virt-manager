@@ -1,7 +1,7 @@
 class VirtViewer < Formula
   desc "App for virtualized guest interaction"
   homepage "https://virt-manager.org/"
-  url "https://virt-manager.org/download/sources/virt-viewer/virt-viewer-10.0.tar.gz"
+  url "https://virt-manager.org/download/sources/virt-viewer/virt-viewer-10.0.tar.xz"
   sha256 "d23bc0a06e4027c37b8386cfd0286ef37bd738977153740ab1b6b331192389c5"
 
   depends_on "pkg-config" => :build
